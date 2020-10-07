@@ -1,18 +1,18 @@
 <template>
-<div>
-  <div v-for="character in characters"  class="card">
+<div class="cl">
+  <div v-for="(item, index) in dataList" :key="index" class="card">
 
     <div class="card-image">
-      <img class="card-image-img" :src="character.image">
+      <img class="card-image-img" :src="item.image">
     </div>
 
     <div class="card-body">
 
       <div class="card-body-header">
-        <a class="card-body-header-name">{{ character.name }}</a>
+        <a class="card-body-header-name">{{ item.name }}</a>
       </div>
 
-      <button @click.prevent=" setFavorite(character)" class="card-body-footer"><IconLike/></button>
+      <button @click.prevent="setFavorite(item)" class="card-body-footer"><IconLike/></button>
     </div>
   </div>
 </div>
@@ -32,8 +32,8 @@ export default {
   },
   computed: mapState(['characters']),
   props: {
-    character: {
-      type: Object,
+    dataList: {
+      type: Array,
       required: true,
     },
   },
@@ -53,6 +53,12 @@ export default {
 </script>
 
 <style scoped>
+.cl {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
 .card {
   display: flex;
   align-items: center;
@@ -61,7 +67,7 @@ export default {
   margin-right: 20px;
   padding: 10px 10px 10px 10px;
   height: 350px;
-  width: 220px;
+  width: 225px;
   border-radius: 2px;
   background-color: white;
   &-image {
