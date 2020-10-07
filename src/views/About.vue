@@ -1,5 +1,22 @@
 <template>
-  <div class="about">
-    <h1>This is an about page</h1>
+  <div>
+    <CharacterCard/>
   </div>
 </template>
+
+<script>
+
+import CharacterCard from "@/components/characterCard";
+
+export default {
+  name: "Favorites",
+  components: {
+    CharacterCard,
+  },
+
+};
+
+</script>
+
+<style>
+</style>
