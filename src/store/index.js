@@ -15,8 +15,8 @@ export default new Vuex.Store({
     SET_FAVORITE(state, character) {
       state.favorites.push(character);
     },
-    REMOVE_FAVORITE(state, movie) {
-      const index = state.favorites.findIndex((item) => item.id === movie.id);
+    REMOVE_FAVORITE(state, character) {
+      const index = state.favorites.findIndex((item) => item.id === character.id);
       state.favorites.splice(index, 1);
     }
   },
