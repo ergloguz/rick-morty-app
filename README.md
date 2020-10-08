@@ -1,5 +1,10 @@
 # pixselect
 
+API:  https://rickandmortyapi.com/documentation/
+
+
+## Related Packages
+
 ## Project setup
 ```
 npm install
