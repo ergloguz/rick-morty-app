@@ -10,7 +10,9 @@ body {
     font-family: 'Barlow Condensed', sans-serif;
 }
 
-
-a  {
+a {
     font-weight: bold;
+    color: black;
+    text-decoration: none;
+    font-size:16px;
 }

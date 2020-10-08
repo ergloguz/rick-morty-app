@@ -27,7 +27,7 @@ export default {
 .normal {
   font-size: 22px;
   font-weight: bold;
-  margin-top: 10px;
+  margin-top: 5px;
   color: cornflowerblue;
 }
 </style>

@@ -6,29 +6,20 @@
       </div>
 
       <div class="c-d">
-
           <CustomLabel>NAME:</CustomLabel>
-          {{name}}
-
-
+          <a>{{name}}</a>
 
           <CustomLabel>GENDER:  </CustomLabel>
-          {{gender}}
-
-
-
+          <a>{{gender}}</a>
 
           <CustomLabel>SPECIES:</CustomLabel>
-          {{species}}
-
-
+          <a>{{species}}</a>
 
           <CustomLabel>STATUS:</CustomLabel>
-          {{status}}
+          <a>{{status}}</a>
 
-
-          <CustomLabel>LOCATION:</CustomLabel>    {{location.name}}
-
+          <CustomLabel>LOCATION:</CustomLabel>
+          <a>{{location.name}}</a>
       </div>
 
     </DetailCard>
