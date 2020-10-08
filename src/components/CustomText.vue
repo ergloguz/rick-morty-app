@@ -25,7 +25,6 @@ export default {
 
 <style scoped>
 .normal {
-
   font-size: 22px;
   font-weight: bold;
 }
