@@ -38,10 +38,10 @@
 <script>
 import DetailCard from "../components/detailCard";
 import CustomLabel from "../components/customLabel";
-import CustomText from "../components/customText";
+
 export default {
   name:"Detail",
-  components: {CustomText, CustomLabel, DetailCard},
+  components: { CustomLabel, DetailCard},
   data() {
     return {
       id: "",
