@@ -24,8 +24,5 @@ export default {
 </script>
 
 <style scoped>
-.normal {
-  font-size: 22px;
-  font-weight: bold;
-}
+
 </style>

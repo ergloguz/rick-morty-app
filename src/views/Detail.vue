@@ -13,7 +13,7 @@
 
         <CustomText>
           <CustomLabel>GENDER:  </CustomLabel>
-           {{gender}}
+          {{gender}}
         </CustomText>
 
 
@@ -40,7 +40,6 @@
 import DetailCard from "../components/detailCard";
 import CustomLabel from "../components/customLabel";
 import CustomText from "../components/customText";
-
 export default {
   name:"Detail",
   components: {CustomText, CustomLabel, DetailCard},
@@ -56,7 +55,6 @@ export default {
       }
     };
   },
-
   created() {
     this.id = this.$route.params.id;
     this.gender = this.$route.params.gender;
@@ -81,6 +79,5 @@ export default {
     flex-direction: column;
     padding: 20px;
   }
-
 }
 </style>
