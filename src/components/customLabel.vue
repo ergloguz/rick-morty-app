@@ -6,7 +6,7 @@
 
 <script>
 export default {
-  name: 'CustomText',
+  name: 'CustomLabel',
   props: {
     tag: {
       type: String,
@@ -25,8 +25,9 @@ export default {
 
 <style scoped>
 .normal {
-
   font-size: 22px;
   font-weight: bold;
+  margin-top: 10px;
+  color: cornflowerblue;
 }
 </style>

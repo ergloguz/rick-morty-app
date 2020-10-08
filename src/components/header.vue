@@ -1,9 +1,7 @@
 <template>
-  <div>
-    <header class="header">
-
-    </header>
-
+  <div class="header">
+    <router-link class="header-link" to="/">home</router-link>
+    <router-link class="header-link" to="/favorites">favorites</router-link>
   </div>
 </template>
 
@@ -15,7 +13,15 @@ export default {
 
 <style scoped>
 .header {
+  display: flex;
   height: 56px;
-  background-color: white;
+  &-link {
+    margin-right: 20px;
+    color:white;
+    font-size: 28px;
+    &:hover {
+      color:cornflowerblue;
+    }
+  }
 }
 </style>

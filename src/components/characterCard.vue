@@ -1,13 +1,25 @@
 <template>
-<div class="cl">
+<div class="row">
   <div v-for="(item, index) in dataList" :key="index" class="card">
 
-    <div class="card-image">
+    <div
+        @click="$router.push({
+          name:'Detail',
+          params:{
+            id:item.id,
+            image:item.image,
+            name:item.name,
+            species:item.species,
+            gender:item.gender,
+            status:item.status,
+            location:item.location,
+          }})"
+
+         class="card-image">
       <img class="card-image-img" :src="item.image">
     </div>
 
     <div class="card-body">
-
       <div class="card-body-header">
         <a class="card-body-header-name">{{ item.name }}</a>
       </div>
@@ -38,11 +50,11 @@ export default {
     },
   },
   methods:{
-    setFavorite(movieItem) {
-      if (this.isFavorite(movieItem.id)) {
-        this.$store.commit('REMOVE_FAVORITE', movieItem);
+    setFavorite(characterItem) {
+      if (this.isFavorite(characterItem.id)) {
+        this.$store.commit('REMOVE_FAVORITE', characterItem);
       } else {
-        this.$store.commit('SET_FAVORITE', movieItem);
+        this.$store.commit('SET_FAVORITE', characterItem);
       }
     },
     isFavorite(id) {
@@ -53,12 +65,6 @@ export default {
 </script>
 
 <style scoped>
-.cl {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-}
 .card {
   display: flex;
   align-items: center;
@@ -67,12 +73,13 @@ export default {
   margin-right: 20px;
   padding: 10px 10px 10px 10px;
   height: 350px;
-  width: 225px;
+  width: 220px;
   border-radius: 2px;
   background-color: white;
   &-image {
     height: 250px;
     width: 200px;
+    cursor: pointer;
     &-img {
       height: inherit;
       width: inherit;
