@@ -1,5 +1,5 @@
 <template>
-<div class="row">
+<div class="top">
   <div v-for="(item, index) in dataList" :key="index" class="card">
 
     <div
@@ -65,6 +65,15 @@ export default {
 </script>
 
 <style scoped>
+
+
+.top {
+    flex-direction: row;
+    flex-wrap: wrap;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .card {
   display: flex;
   align-items: center;

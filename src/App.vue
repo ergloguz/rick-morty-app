@@ -12,10 +12,6 @@ import Header from "@/components/header";
 export default {
   name:"App",
   components: {Header, Container},
-  mounted(){
-    this.$store.dispatch("loadCharacters")
-
-  }
 }
 
 </script>
