@@ -37,9 +37,9 @@
 </template>
 
 <script>
-import DetailCard from "@/components/detailCard";
-import CustomLabel from "@/components/customLabel";
-import CustomText from "@/components/customText";
+import DetailCard from "../components/detailCard";
+import CustomLabel from "../components/customLabel";
+import CustomText from "../components/customText";
 
 export default {
   name:"Detail",
