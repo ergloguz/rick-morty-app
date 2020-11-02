@@ -28,6 +28,6 @@ export default {
   font-size: 22px;
   font-weight: bold;
   margin-top: 5px;
-  color: cornflowerblue;
+  color: rgb(var(--blue));
 }
 </style>

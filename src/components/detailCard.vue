@@ -16,7 +16,7 @@ export default {
 
 <style scoped>
 .custom {
-  background-color: #FFBFBF;
+  background-color: rgb(var(--pink));
   width: 600px;
   height: 340px;
   padding: 20px;
@@ -24,7 +24,7 @@ export default {
   display: grid;
   grid-template-columns: 1fr 1fr;
   &-inner {
-    background-color: white;
+    background-color: rgb(var(--white));
     width: 600px;
     height: 340px;
     padding: 20px;

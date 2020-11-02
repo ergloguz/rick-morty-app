@@ -1,5 +1,5 @@
 <template>
-  <div class="c">
+  <div class="c flexCenter">
     <DetailCard>
       <div>
         <img :src="image" alt="">
@@ -59,11 +59,8 @@ export default {
 
 <style scoped>
 .c {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   padding-top: 100px;
-  color: white;
+  color: rgb(var(--white));
   &-d {
     display: flex;
     flex-direction: column;

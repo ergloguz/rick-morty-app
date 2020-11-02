@@ -1,3 +1,5 @@
+@import "variables.css";
+
 * {
     margin: 0;
     padding: 0;
@@ -6,13 +8,18 @@
 
 
 body {
-    background-color: black;
+    background-color: rgb(var(--black));
     font-family: 'Barlow Condensed', sans-serif;
 }
 
 a {
     font-weight: bold;
-    color: black;
+    color: rgb(var(--black));
     text-decoration: none;
-    font-size:16px;
+    font-size: 16px;
+}
+.flexCenter{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }

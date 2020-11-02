@@ -1,5 +1,5 @@
 <template>
-<div class="top">
+<div class="top flexCenter">
   <div v-for="(item, index) in dataList" :key="index" class="card">
 
     <div
@@ -24,7 +24,7 @@
         <a class="card-body-header-name">{{ item.name }}</a>
       </div>
 
-      <button @click.prevent="setFavorite(item)" class="card-body-footer"><IconLike/></button>
+      <button @click.prevent="setFavorite(item)" class="card-body-footer flexCenter"><IconLike/></button>
     </div>
   </div>
 </div>
@@ -70,9 +70,6 @@ export default {
 .top {
     flex-direction: row;
     flex-wrap: wrap;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 .card {
   display: flex;
@@ -80,7 +77,7 @@ export default {
   flex-direction: column;
   margin-top: 20px;
   margin-right: 20px;
-  padding: 10px 10px 10px 10px;
+  padding: 10px;
   height: 350px;
   width: 220px;
   border-radius: 2px;
@@ -113,15 +110,12 @@ export default {
       }
     }
     &-footer {
-      display: flex;
-      align-items: center;
-      justify-content: center;
       height: 50px;
       width: 50px;
       border-radius: 5px;
-      background-color: #FFBFBF;
+      background-color: rgb(var(--pink));
       font-weight: bold;
-      color: white;
+      color: rgb(var(--white));
     }
 
   }

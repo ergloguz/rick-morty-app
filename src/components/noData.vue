@@ -1,6 +1,6 @@
 <template>
-  <div class="data">
-    <v-card class="data-miss">
+  <div class="data flexCenter">
+    <v-card class="data-miss flexCenter">
       <IconAlert></IconAlert>
     </v-card>
     <CustomLabel>SORRY ! WE COULDNT REACH YOUR FAVORITE CHARACTERS</CustomLabel>
@@ -21,18 +21,12 @@ export default {
 
 <style scoped>
 .data {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   flex-direction: column;
 
   &-miss {
-    display: flex;
-    align-items: center;
-    justify-content: center;
     height: 300px;
     width: 300px;
-    background-color: #FFBFBF;
+    background-color: rgb(var(--pink));
   }
 }
 </style>

@@ -17,10 +17,10 @@ export default {
   height: 56px;
   &-link {
     margin-right: 20px;
-    color:white;
+    color:rgb(var(--white));
     font-size: 28px;
     &:hover {
-      color:cornflowerblue;
+      color:rgb(var(--blue));
     }
   }
 }
